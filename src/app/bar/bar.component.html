@@ -1,0 +1,22 @@
+<!-- Ingredients Headline -->
+<hr class="hr5" />
+
+<!-- Search Bar -->
+<div class = "search-bar">
+  <input type="text" class = "userInput" [(ngModel)]="searchValue" placeholder="Search by ingredient name...">
+  <button class = "search-button" (click)="onIngredientSearch(searchValue)"><fa-icon [icon]="faSearch"></fa-icon> </button>
+</div>
+
+<div class = "row">
+  <div class = "col-lg-3" *ngFor = "let item of myBar">
+    <div class = "drink-container">
+      <p id = "item-name"> {{ item.strIngredient1 }}</p>
+      <img src= "{{ item.imagePath }}" alt="">
+  
+      <button class = "btn" (click) = "onAddToCabinet(item)"> Add To Cabinet </button>
+    </div>
+  </div>
+</div>
+
+
+

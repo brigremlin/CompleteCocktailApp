@@ -1,0 +1,87 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="" router-link-active="router-link-active">Drink Up</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <a
+            class="headerName"
+            routerLink="cocktails"
+            routerLinkActive="router-link-active"
+            >Cocktails</a
+          >
+        </li>
+        <li>
+          <a
+            class="headerName"
+            routerLink="favorite"
+            routerLinkActive="router-link-active"
+            >Favorites</a
+          >
+        </li>
+        <li class="dropdown">
+          <a
+            class="headerName"
+            routerLink="bar"
+            router-link-active="router-link-active"
+          >
+            Bar
+          </a>
+        </li>
+        <li>
+          <a
+            class="headerName"
+            routerLink="cabinet"
+            router-link-active="router-link-active"
+          >
+            My Cabinet
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="navbar-right">
+          <li>
+            <fa-icon class = "wine-icon" [icon]="faBeer"></fa-icon>
+            <a
+              class="signup"
+              routerLink="auth"
+              routerLinkActive="router-link-active"
+            >
+              Login / Register
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--HEADER-->
+<div class="header">
+  <div class="header-container">
+    <div class="search">
+      <input type="text" class="search-term" placeholder="Search" />
+      <button type="submit" class="search-button">
+        <fa-icon [icon]="faSearch"></fa-icon>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
+<hr>
+

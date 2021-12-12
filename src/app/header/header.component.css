@@ -1,0 +1,104 @@
+nav {
+  background-color: #000000;
+  margin-bottom: 0%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  color: rgb(255, 255, 255)
+}
+
+.btn-default{
+  margin-left: 5px;
+}
+
+.header-container {
+  background-image: url("../../assets/jackDanielsClose.jpg");
+  height: 480px;
+  opacity: 90%;
+  margin: 0px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.search {
+  text-align: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  left: 40%;
+  width: 500px;
+}
+
+.search-term {
+  width: 100%;
+  padding: 5px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  border: 3px solid #424242;
+  border-right: none;
+  background-color: #8f8f8f;
+}
+
+.search-button {
+  width: 80px;
+  height: 70px;
+  background: #424242;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 80%;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 100%;
+  margin-left: -10px;
+  border: none;
+
+} 
+
+input {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
+
+.navbar-right {
+  margin-right: 3px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.signup {
+  color: white;
+  padding: 8px;
+
+}
+
+li{
+   display: inline;
+}
+
+.wine-icon {
+  color: white;
+  font-size: 25px;
+}
+
+hr {
+  border:none;
+  height: 20px;
+ 	width: 100%;
+	height: 50px;
+	margin-top: 0;
+	border-bottom: 1px solid #1f1209;
+	box-shadow: 0 30px 30px -20px #333;
+  margin: -50px auto 10px; 
+}

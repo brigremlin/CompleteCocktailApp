@@ -1,0 +1,27 @@
+form {
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+button {
+    background-color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgb(241, 218, 111);
+    color: black;
+}
+
+input {
+    border: 3px solid rgb(94, 94, 94);
+    height: 50px;
+}
+
+label{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
