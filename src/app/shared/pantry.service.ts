@@ -19,7 +19,6 @@ export class PantryService {
       )
       .pipe(
         map((ingredients) => {
-          console.log(ingredients.drinks);
           return ingredients.drinks;
         })
       );
@@ -28,11 +27,10 @@ export class PantryService {
   onIngredientSearch(searchValue: string) {
     return this.http
       .get<any>(
-        'http://www.thecocktaildb.com/api/json/v1/1/filter.php?i=' + searchValue
+        'http://www.thecocktaildb.com/api/json/v2/'+ environment.cocktailDBKey+'/search.php?i=' + searchValue
       )
       .pipe(
         map((ingredients) => {
-          console.log(ingredients.drinks);
           return ingredients.drinks;
         })
       );

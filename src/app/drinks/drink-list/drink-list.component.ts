@@ -36,10 +36,4 @@ export class DrinkListComponent implements OnInit {
         this.popularDrinks = drinks;
       });
   }
-
-  cocktailDetail(idDrink: number) {
-    console.log(idDrink);
-    this.drinkService.getDrink(idDrink);
-  }
-
 }
