@@ -9,7 +9,6 @@
   vertical-align: middle;
   align-items: center;
   margin: 10px;
-  margin-bottom: 200px;
   padding-top: 20px;
 }
 .hr5 {
@@ -101,16 +100,6 @@
   vertical-align: middle;
 }
 
-/* .featured {
-  border-radius: 10px;
-  height: 400px;
-  margin-top: 20px;
-  /* position: relative;
-  display: block;
-  margin: auto; */
-/* float: left;
-  padding-right: 50px;
-} */
 */ .featured {
   background-color: wheat;
 }
@@ -180,24 +169,4 @@
   backface-visibility: hidden;
   transition: all 0.3s ease-in-out;
   transform: perspective(500px) rotateY(180deg);
-}
-.card-box:hover .card-box-front {
-  transform: perspective(500px) rotateY(-180deg);
-}
-.card-box:hover .card-box-back {
-  transform: perspective(500px) rotateY(0deg);
-}
-
-.card-box-back p {
-  -moz-transform: scale(-1, 1);
-  -webkit-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-  font-size: 20px;
-}
-
-.card-box-back-in {
-  width: 100%;
-  text-align: center;
 }
