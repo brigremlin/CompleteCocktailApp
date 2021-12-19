@@ -4,7 +4,7 @@
 <hr class="hr5" />
 
 <div class="row">
-  <div class="col-lg-3" *ngFor="let drink of myDrinks; let index = i" >
-    <app-drink-item [drink]="drink" [index]="i" ></app-drink-item>
+  <div class="col-lg-3" *ngFor="let drink of myDrinks; let index = i" (click)="cocktailDetail(drink.idDrink)" >
+    <app-drink-item [drink]="drink" [index]="i" [drinkId]="drink.idDrink" ></app-drink-item>
   </div>
 </div>

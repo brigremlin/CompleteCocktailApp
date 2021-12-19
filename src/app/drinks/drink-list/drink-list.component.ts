@@ -37,4 +37,9 @@ export class DrinkListComponent implements OnInit {
       });
   }
 
+  cocktailDetail(idDrink: number) {
+    console.log(idDrink);
+    this.drinkService.getDrink(idDrink);
+  }
+
 }
