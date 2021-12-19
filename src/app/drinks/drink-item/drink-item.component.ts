@@ -12,6 +12,8 @@ export class DrinkItemComponent {
   @Input() drink;
   @Input() index;
   @Input() id;
+  @Input() drinkId;
+  
 
   isFavorited = false;
 

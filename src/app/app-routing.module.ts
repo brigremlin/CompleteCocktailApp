@@ -37,6 +37,7 @@ import { ZComponent } from "./letter-pages/z/z.component";
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
+  { path: 'cocktails/:id', component: DrinkDetailsComponent},
   { path: "cocktails", component: DrinkListComponent, children: [
     { path: ":id", component: DrinkDetailsComponent }
   ]},

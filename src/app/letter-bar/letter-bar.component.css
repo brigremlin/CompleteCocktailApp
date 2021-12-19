@@ -28,8 +28,10 @@
   letter-spacing: 20px;
   color: black;
   text-align: center;
+  display: inline-block;
 }
 
 a {
   color: rgb(199, 175, 40);
+  display: inline-block;
 }

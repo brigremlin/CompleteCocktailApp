@@ -1,11 +1,9 @@
 
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap} from '@angular/router';
-import { Observable, Subscription } from 'rxjs';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
 import { Drink} from 'src/app/shared/drink.model';
 import { DrinkService } from '../drink.service';
-import { Params } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+
 
 
 @Component({
@@ -14,15 +12,20 @@ import { switchMap } from 'rxjs/operators';
   styleUrls: ['./drink-details.component.css']
 })
 export class DrinkDetailsComponent implements OnInit {
-  currentDrink: Drink;
-  drinkList: Drink[]=[];
-  id: number;
-  drinkSubscription: Subscription;
+  id;
+  drink;
+  drinks: Drink[]  = [];
+
 
 
   constructor(private route: ActivatedRoute, private drinkService: DrinkService ) { }
-  name: string;
-
-ngOnInit() {}
+  ngOnInit(){
+    this.route.params.subscribe((params) => {
+      this.id = params['id'];
+      console.log(this.id)
+      this.drink = this.drinkService.getDrink(this.id);
+      console.log(this.drink);
+    });
+  }
 
 }
