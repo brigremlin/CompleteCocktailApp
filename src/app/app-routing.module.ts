@@ -35,9 +35,6 @@ import { YComponent } from './letter-pages/y/y.component';
 import { ZComponent } from './letter-pages/z/z.component';
 
 const appRoutes: Routes = [
-
-  { path: '', component: HomeComponent },
-
   { path: '', component: HomeComponent},
   { path: 'cocktails/:id', component: DrinkDetailsComponent},
   { path: "cocktails", component: DrinkListComponent, children: [
@@ -75,46 +72,6 @@ const appRoutes: Routes = [
   { path: 'z', component: ZComponent},
 ];
 
-
-  { path: 'cocktails/:id', component: DrinkDetailsComponent },
-
-  { path: '**', redirectTo: '/home' },
-  {
-    path: 'cocktails',
-    component: DrinkListComponent,
-    children: [{ path: ':id', component: DrinkDetailsComponent }],
-  },
-  { path: 'favorite', component: FavoriteListComponent },
-  { path: 'bar', component: BarComponent },
-  { path: 'cabinet', component: MyCabinetComponent },
-  { path: 'auth', component: AuthComponent },
-  { path: 'a', component: AComponent },
-  { path: 'b', component: BComponent },
-  { path: 'c', component: CComponent },
-  { path: 'd', component: DComponent },
-  { path: 'e', component: EComponent },
-  { path: 'f', component: FComponent },
-  { path: 'g', component: GComponent },
-  { path: 'h', component: HComponent },
-  { path: 'i', component: IComponent },
-  { path: 'j', component: JComponent },
-  { path: 'k', component: KComponent },
-  { path: 'l', component: LComponent },
-  { path: 'm', component: MComponent },
-  { path: 'n', component: NComponent },
-  { path: 'o', component: OComponent },
-  { path: 'p', component: PComponent },
-  { path: 'q', component: QComponent },
-  { path: 'r', component: RComponent },
-  { path: 's', component: SComponent },
-  { path: 't', component: TComponent },
-  { path: 'u', component: UComponent },
-  { path: 'v', component: VComponent },
-  { path: 'w', component: WComponent },
-  { path: 'x', component: XComponent },
-  { path: 'y', component: YComponent },
-  { path: 'z', component: ZComponent },
-];
 
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

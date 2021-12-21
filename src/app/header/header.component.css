@@ -1,7 +1,9 @@
 nav {
   background-color: #000000;
   margin-bottom: 0%;
+
 }
+
 
 .navbar-brand {
   font-weight: bold;
@@ -59,7 +61,7 @@ nav {
   margin-left: -10px;
   border: none;
 
-} 
+}
 
 input {
   font-weight: bold;
@@ -100,5 +102,5 @@ hr {
 	margin-top: 0;
 	border-bottom: 1px solid #1f1209;
 	box-shadow: 0 30px 30px -20px #333;
-  margin: -50px auto 10px; 
+  margin: -50px auto 10px;
 }
