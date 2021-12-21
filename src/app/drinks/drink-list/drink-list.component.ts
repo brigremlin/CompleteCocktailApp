@@ -36,5 +36,4 @@ export class DrinkListComponent implements OnInit {
         this.popularDrinks = drinks;
       });
   }
-
 }

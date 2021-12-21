@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   faWine = faWineBottle;
   faBeer = faBeer;
   faWhiskey = faGlassWhiskey;
+  collapsed = true;
 
 
 

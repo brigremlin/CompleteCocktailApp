@@ -4,6 +4,7 @@ import { Drink } from '../shared/drink.model';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { Subject } from 'rxjs';
+import { Ingredient } from '../shared/ingredient.model';
 
 @Injectable()
 export class DrinkService {
@@ -11,7 +12,16 @@ export class DrinkService {
 
   drinkList: Drink[] = [];
   drinkSubject = new Subject<Drink>();
-  searchValue:string;
+  searchValue: string;
+  ingredients: string[] = [];
+
+  searchIngredient(name:string) {
+    return this.http.get<any>(
+      'https://www.thecocktaildb.com/api/json/v2/' +
+        environment.cocktailDBKey +
+        '/search.php?i=' + name
+    );
+  }
 
   getDrinks() {
     return this.http
@@ -39,6 +49,21 @@ export class DrinkService {
           return drinks.drinks;
         })
       );
+  }
+
+  getAlcoholicCocktail(id: string) {
+    this.http
+      .get(
+        'https://www.thecocktaildb.com/api/json/v2/' +
+          environment.cocktailDBKey +
+          '/lookup.php?i=' +
+          id
+      )
+      .pipe(map((data: any) => data.drinks.map(Drink.adapt)))
+      .subscribe((res) => {
+        console.log(res);
+        this.drinkSubject.next(res[0]);
+      });
   }
 
   getDrink(id: number) {
