@@ -1,4 +1,4 @@
-.colour-block {
+/* .colour-block {
   background: #000000;
   background-image: url("../../../assets/colorfulBar.jpg");
   filter: grayscale(100%);
@@ -13,16 +13,16 @@
 .colour-block::before {
   content: "";
   /* background-image: url("../../../assets/colorfulBar.jpg"); */
-  position: absolute;
+  /* position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
   /* background-size: cover; */
-  top: 0px;
+  /* top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   opacity: 0.6;
-}
+}   */
 /*----------------*/
 /*  SCALLOP down  */
 /*----------------*/
@@ -36,7 +36,7 @@
 /*----------------*/
 /*  SCALLOP up    */
 /*----------------*/
-.scallop-up {
+/* .scallop-up {
   opacity: 85%;
   height: 100px;
   width: 100%;
@@ -52,4 +52,4 @@
     to(white)
   );
   -webkit-background-size: 49px 100%;
-}
+} */
