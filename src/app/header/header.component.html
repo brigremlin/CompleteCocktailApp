@@ -1,78 +1,44 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button
-        type="button"
-        class="navbar-toggle collapsed"
-        data-toggle="collapse"
-        data-target="#bs-example-navbar-collapse-1"
-        aria-expanded="false"
-        (click) = "collapsed = !collapsed"
-      >
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" routerLink="" router-link-active="router-link-active">Drink Up</a>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Drink Up</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    (click)="collapsed = !collapsed"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"  [ngClass]="{ collapse: collapsed }">
-      <ul class="nav navbar-nav">
-        <li>
-          <a
-            class="headerName"
-            routerLink="cocktails"
-            routerLinkActive="router-link-active"
-            >Cocktails</a
-          >
-        </li>
-        <li>
-          <a
-            class="headerName"
-            routerLink="favorite"
-            routerLinkActive="router-link-active"
-            >Favorites</a
-          >
-        </li>
-        <li class="dropdown">
-          <a
-            class="headerName"
-            routerLink="bar"
-            router-link-active="router-link-active"
-          >
-            Bar
-          </a>
-        </li>
-        <li>
-          <a
-            class="headerName"
-            routerLink="cabinet"
-            router-link-active="router-link-active"
-          >
-            My Cabinet
-          </a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <div class="navbar-right">
-          <li>
-            <fa-icon class = "wine-icon" [icon]="faBeer"></fa-icon>
-            <a
-              class="signup"
-              routerLink="auth"
-              routerLinkActive="router-link-active"
-            >
-              Login / Register
-            </a>
-          </li>
-        </div>
-      </ul>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{collapse : collapsed}" (click)="collapsed = !collapsed">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="cocktails"
+          >Cocktails <span class="sr-only"></span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="favorite">Favorites</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="bar">Bar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="cabinet">My Cabinet</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#" routerLink="auth">
+          Login
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>
-
-
 
 <!--HEADER-->
 <div class="header">

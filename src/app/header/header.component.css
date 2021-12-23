@@ -25,62 +25,6 @@ nav {
   align-items: center;
 }
 
-.search {
-  text-align: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-  left: 40%;
-  width: 500px;
-}
-
-.search-term {
-  width: 100%;
-  padding: 5px;
-  height: 50px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #9dbfaf;
-  border: 3px solid #424242;
-  border-right: none;
-  background-color: #8f8f8f;
-}
-
-.search-button {
-  width: 80px;
-  height: 70px;
-  background: #424242;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  border-radius: 80%;
-  cursor: pointer;
-  font-size: 20px;
-  opacity: 100%;
-  margin-left: -10px;
-  border: none;
-}
-
-input {
-  font-weight: bold;
-  font-size: 20px;
-  color: black;
-}
-
-::placeholder {
-  color: black;
-}
-
-.navbar-right {
-  margin-right: 3px;
-  padding-top: 8px;
-  font-weight: bold;
-}
-
-.signup {
-  color: white;
-  padding: 8px;
-}
-
 li {
   display: inline;
 }
@@ -101,6 +45,11 @@ hr {
   margin: -50px auto 10px;
 }
 
-a {
-  cursor: pointer;
+.navbar-toggler-icon {
+  height: 30px;
+  width: 50px;
+}
+
+.container {
+  width: 100%;
 }

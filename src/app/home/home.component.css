@@ -1,6 +1,7 @@
 .circle {
   border-radius: 50%;
-  height: 200px;
+  height: 180px;
+  align-items: center;
 }
 
 .circle-line {
@@ -98,11 +99,10 @@
   padding: 20px;
   display: inline-block;
   vertical-align: middle;
+  align-items: center;
 }
 
-*/ .featured {
-  background-color: wheat;
-}
+
 
 #featured-name {
   text-align: left;
@@ -146,27 +146,10 @@
   position: relative;
   cursor: pointer;
 }
-.card-box-front {
-  position: relative;
-  backface-visibility: hidden;
-  transition: all 0.3s ease-in-out;
-  transform: perspective(500px) rotateY(0deg);
-}
+
 .card-box-front img {
   min-width: 100%;
   max-width: 100%;
   display: block;
 }
-.card-box-back {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background: rgb(240, 223, 151);
-  backface-visibility: hidden;
-  transition: all 0.3s ease-in-out;
-  transform: perspective(500px) rotateY(180deg);
-}
+
