@@ -63,6 +63,7 @@ a {
 }
 
 .hr5 {
+  margin: 5%;
   border: 0;
   border-top: medium double #CCC;
   height: 1px;
@@ -70,7 +71,7 @@ a {
   padding: 0;
   color: #CCC;
   text-align: center;
-  margin-top: 100px;
+
 }
 
 .hr5::after {
@@ -78,7 +79,7 @@ a {
   display: inline-block;
   position: relative;
   top: -0.7em;
-  font-size: 2.4em;
+  font-size: 5vmin;
   padding: 0 0.3em;
   background: white;
   color: black;
@@ -101,7 +102,7 @@ a {
   display: inline-block;
   position: relative;
   top: -0.7em;
-  font-size: 2.4em;
+  font-size: 5vmin;
   padding: 0 0.3em;
   background: white;
   color: black;

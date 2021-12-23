@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore/'; 
 
 import { AppComponent } from './app.component';
 import { DrinkDetailsComponent } from './drinks/drink-details/drink-details.component';
@@ -101,7 +105,10 @@ import { NonAlcoholicComponent } from './drinks/categories/non-alcoholic/non-alc
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
 
   ],
   providers: [DrinkService, FavoriteService, PantryService, MyBarService],
