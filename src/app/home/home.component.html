@@ -4,7 +4,7 @@
   <fa-icon class="wine-right" [icon]="faWine"></fa-icon>
   <p id="opening">
     Learn how to make great cocktails in the comfort of your own home.
-    <br />Search by recipe name, ingredient, or category.
+    <br />Search by recipe name.
   </p>
 </div>
 
@@ -56,7 +56,7 @@
 <hr class="hr5" />
 <!-- Display of popular cocktail line with circle images -->
 <div class="container-fluid">
-  <div class="circle-line" *ngFor="let drink of myDrinks.slice(0, 5)">
+  <div class="circle-line" *ngFor="let drink of myDrinks.slice(0,5)">
     <div class="image-dot">
       <a
         [routerLink]="'/cocktails/' + drink.idDrink"
