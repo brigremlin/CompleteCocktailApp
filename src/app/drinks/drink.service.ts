@@ -15,12 +15,20 @@ export class DrinkService {
   searchValue: string;
   ingredients: string[] = [];
 
-  searchIngredient(name:string) {
-    return this.http.get<any>(
-      'https://www.thecocktaildb.com/api/json/v2/' +
-        environment.cocktailDBKey +
-        '/search.php?i=' + name
-    );
+  getCocktailsByName(name: string): Promise<Array<Drink>> {
+    return this.http.get('https://www.thecocktaildb.com/api/json/v2/'+ environment.cocktailDBKey+'/search.php', {
+      params: {s: name}
+    }).toPromise().then(res => {
+      if (res['drinks']) {
+        const drinks = [];
+        for (const drink of res['drinks']) {
+          drinks.push(drink);
+        }
+        return drinks;
+      } else {
+        return [];
+      }
+    });
   }
 
   getDrinks() {

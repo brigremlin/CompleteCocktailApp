@@ -23,6 +23,10 @@ export class HomeComponent implements OnInit {
   faWhiskey = faGlassWhiskey;
   faWine = faWineBottle;
   recentSubscription: Subscription;
+  public search = '';
+  public cocktailList: Drink[] = [];
+  public noResults = 'No Results Found';
+  clicked: number;
 
   ngOnInit() {
     this.subscription = this.drinkService.getDrinks().subscribe((drinks) => {
@@ -43,5 +47,21 @@ export class HomeComponent implements OnInit {
 
   drinkDetail(id: string) {
     this.drinkService.getAlcoholicCocktail(id);
+  }
+
+  searchDrink(search: string) {
+    this.clicked = 1;
+    this.drinkService.getCocktailsByName(this.search).then((res) => {
+      this.cocktailList = res;
+    });
+  }
+
+  getMatchingList() {
+    const matchingCocktail = [];
+    for (const drink of this.cocktailList) {
+      matchingCocktail.push(drink);
+    }
+
+    return matchingCocktail;
   }
 }
