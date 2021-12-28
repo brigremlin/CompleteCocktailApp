@@ -2,13 +2,12 @@
   border-style: solid;
   border-color: black;
   border-radius: 5px;
-  box-shadow: 5px 3px 3px  gray;
+  box-shadow: 5px 3px 3px gray;
   padding: 10px;
   margin-top: 20px;
   min-height: 120px;
   text-align: center;
 }
-
 
 #item-name {
   font-weight: bold;
@@ -28,11 +27,11 @@ h1 {
 
 .hr5 {
   border: 0;
-  border-top: medium double #CCC;
+  border-top: medium double #ccc;
   height: 1px;
   overflow: visible;
   padding: 0;
-  color: #CCC;
+  color: #ccc;
   text-align: center;
   margin-top: 100px;
 }
@@ -54,7 +53,7 @@ h1 {
   padding-top: 15px;
 }
 
-input{
+input {
   border: 1px solid black;
   width: 200px;
   height: 30px;

@@ -4,7 +4,6 @@ import { Drink } from '../shared/drink.model';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { Subject } from 'rxjs';
-import { Ingredient } from '../shared/ingredient.model';
 
 @Injectable()
 export class DrinkService {

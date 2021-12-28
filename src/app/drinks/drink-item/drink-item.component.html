@@ -6,7 +6,7 @@
     <img class="drink-image" src="{{ drink.strDrinkThumb }}" alt=""
   /></a>
   <p id="drink-name">{{ drink.strDrink }}</p>
-  <button type="button" class="star" (click)="onFavoritedDrinks(drink)">
+  <button type="button" class="star" (click)="onFavoritedDrinks(drink); isFavorited = !isFavorited">
     {{ isFavorited ? "&#9733;" : "&#9734;" }}
   </button>
 </div>

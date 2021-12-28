@@ -1,5 +1,4 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { Drink } from 'src/app/shared/drink.model';
 import { DrinkService } from '../drink.service';
 import { FavoriteService } from '../favorite.service';
@@ -14,37 +13,28 @@ export class DrinkItemComponent {
   @Input() id;
   @Input() drinkId;
   ingredients: string[] = [];
-  
 
   isFavorited = false;
 
-  constructor(
-    private router: Router,
-    private favoriteService: FavoriteService,
-    private drinkService: DrinkService,
-    private route: ActivatedRoute
-  ) {}
-
+  constructor(private favoriteService: FavoriteService, private drinkService: DrinkService) {}
 
   onFavoritedDrinks(drink: Drink) {
     this.isFavorited = this.favoriteService.isFavorited(drink);
     if (!this.favoriteService.isFavorited(drink)) {
       this.favoriteService.favoriteList.push(drink);
-      this.isFavorited = !this.isFavorited;
     } else {
       this.favoriteService.favoriteList.splice(this.index, 1);
     }
   }
 
-  drinkDetail(id: string){
+  drinkDetail(id: string) {
     console.log(id);
     this.drinkService.getAlcoholicCocktail(id);
   }
 
-  getIngredients(drink:Drink){
-    if(drink.strIngredient1 != null){
+  getIngredients(drink: Drink) {
+    if (drink.strIngredient1 != null) {
       this.ingredients.push(drink.strIngredient1);
     }
   }
-
 }

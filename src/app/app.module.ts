@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { environment } from '../environments/environment';
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore/'; 
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
 
 import { AppComponent } from './app.component';
 import { DrinkDetailsComponent } from './drinks/drink-details/drink-details.component';
@@ -22,9 +22,6 @@ import { MyBarService } from './bar/my-bar.service';
 import { AuthComponent } from './auth/auth.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { CrookedSectionComponent } from './add-on/crooked-section/crooked-section.component';
-import { ScallopedComponent } from './add-on/scalloped/scalloped.component';
-import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AComponent } from './letter-pages/a/a.component';
 import { BComponent } from './letter-pages/b/b.component';
@@ -66,9 +63,6 @@ import { NonAlcoholicComponent } from './drinks/categories/non-alcoholic/non-alc
     MyCabinetComponent,
     BarComponent,
     AuthComponent,
-    CrookedSectionComponent,
-    ScallopedComponent,
-    FooterComponent,
     HomeComponent,
     AComponent,
     BComponent,

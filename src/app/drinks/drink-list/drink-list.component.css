@@ -1,63 +1,3 @@
-.favoriteIcon {
-  float: right;
-}
-
-.drink-container {
-  border-style: solid;
-  border-color: black;
-  border-radius: 5px;
-  box-shadow: 5px 3px 3px  gray;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.drink-image {
-  max-height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-#drink-name {
-  font-weight: bold;
-  font-size: large;
-  text-align: center;
-}
-span {
-  color: rgba(212, 193, 18, 0.884);
-  font-size: 300%;
-}
-
-button.selected {
-  border: none;
-  background-color: transparent;
-}
-
-.selectedButton {
-  text-align: center;
-}
-
-button.star {
-  color: rgb(238, 199, 71);
-  border: none;
-  background-color: transparent;
-  font-size: 2vw;
-}
-
-h1 {
-  font-weight: bold;
-}
-
-.letters { 
-  padding: 20px;
-  font-weight: bold;
-  font-size: 30px;
-  letter-spacing: 20px;
-  color: black;
-  text-align: center;
-}
-
 a {
   color: rgb(199, 175, 40);
 }
@@ -65,40 +5,16 @@ a {
 .hr5 {
   margin: 5%;
   border: 0;
-  border-top: medium double #CCC;
+  border-top: medium double #ccc;
   height: 1px;
   overflow: visible;
   padding: 0;
-  color: #CCC;
+  color: #ccc;
   text-align: center;
-
 }
 
 .hr5::after {
   content: "Most Popular Recipes";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 5vmin;
-  padding: 0 0.3em;
-  background: white;
-  color: black;
-  font-weight: bold;
-}
-
-.hr6 {
-  border: 0;
-  border-top: medium double #CCC;
-  height: 1px;
-  overflow: visible;
-  padding: 0;
-  color: #CCC;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.hr6::after {
-  content: "Browse Cocktails by Letter";
   display: inline-block;
   position: relative;
   top: -0.7em;
