@@ -20,9 +20,7 @@ export class HomeComponent implements OnInit {
   popularDrinks: Drink[] = [];
   featuredSubscription: Subscription;
   featuredDrink: Drink;
-  faWhiskey = faGlassWhiskey;
   faWine = faWineBottle;
-  recentSubscription: Subscription;
   public search = '';
   public cocktailList: Drink[] = [];
   public noResults = 'No Results Found';
